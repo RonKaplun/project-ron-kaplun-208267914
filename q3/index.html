@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>בקשת לחש חדש</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<form id="spellRequestForm">
+    <h2>טופס בקשת לחש באקדמיה לקוסמות</h2>
+
+    <label for="fullName">שם מלא:</label>
+    <input type="text" id="fullName" name="fullName">
+
+    <label for="email">כתובת אימייל:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="spellType">סוג הלחש המבוקש:</label>
+    <select id="spellType" name="spellType">
+      <option value="">בחר סוג לחש</option>
+      <option value="attack">התקפי</option>
+      <option value="defense">הגנתי</option>
+      <option value="boost">חיזוק</option>
+    </select>
+
+    <label for="knowledgeLevel">רמת הידע הקיימת (1–10):</label>
+    <input type="number" id="knowledgeLevel" name="knowledgeLevel" min="1" max="10">
+
+    <label>האם יש לך שרביט קסמים אישי?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="hasWand" value="yes"> כן</label>
+      <label><input type="radio" name="hasWand" value="no"> לא</label>
+    </div>
+
+    <label for="attempts">מספר ניסיונות קודמים בלחש:</label>
+    <input type="number" id="attempts" name="attempts" min="0">
+
+    <label for="guideSignature">חתימה דיגיטלית של מדריך:</label>
+    <input type="text" id="guideSignature" name="guideSignature">
+
+    <label for="birthDate">יום לידה אסטרולוגי:</label>
+    <input type="date" id="birthDate" name="birthDate">
+
+    <div id="formMessages"></div>
+
+    <button type="submit">שלח בקשה</button>
+  </form>
+
+
+     <script src="script.js"></script>
+
+</body>
+</html>
