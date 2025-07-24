@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  color: gray;
+  padding-right: 200px; 
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: whitesmoke;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 25px;
+  color: blue;
+}
+
+.main-header .slogan {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: purple;
+}
+
+.side-menu {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  width: 180px;
+  background-color:whitesmoke;
+  padding: 15px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.side-menu li {
+  margin-bottom: 10px;
+}
+
+.side-menu a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
