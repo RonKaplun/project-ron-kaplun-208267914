@@ -10,17 +10,17 @@
 
   <header class="main-header">
     <h1>רשימת בקשות לחש</h1>
-    <p class="slogan">כל הבקשות שהוגשו –  פילטרים </p>
   </header>
 
-  <main class="container">
-    <section class="filter-section">
-      <h2>סינון לפי סוג לחש:</h2>
-      <button onclick="filterByType('all')">הצג הכל</button>
-      <button onclick="filterByType('התקפי')">התקפי</button>
-      <button onclick="filterByType('הגנתי')">הגנתי</button>
-      <button onclick="filterByType('חיזוק')">חיזוק</button>
-    </section>
+<section class="filter-section">
+  <div class="filter-title">סינון לפי סוג לחש:</div>
+  <div class="filter-buttons">
+    <button onclick="filterByType('all')">הצג הכל</button>
+    <button onclick="filterByType('התקפי')">התקפי</button>
+    <button onclick="filterByType('הגנתי')">הגנתי</button>
+    <button onclick="filterByType('חיזוק')">חיזוק</button>
+  </div>
+</section>
 
     <section>
       <table id="requestsTable" class="request-table">
