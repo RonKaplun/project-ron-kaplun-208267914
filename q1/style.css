@@ -1,3 +1,27 @@
+body {
+  background-color: lightslategray; 
+  color: darkgrey;           
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  color: darkgrey;
+}
+
+.card-text {
+  color: whitesmoke;
+}
+
+
+
+.card-title {
+  color: black; 
+}
+
+.card .text-muted {
+  color: lightgray;
+}
+
 
 .card-img-top {
   max-height: 100px;
