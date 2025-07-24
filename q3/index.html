@@ -13,13 +13,14 @@
 <form id="spellRequestForm">
     <h2>טופס בקשת לחש באקדמיה לקוסמות</h2>
 
-    <label for="fullName">שם מלא:</label>
+    <label for="fullName">שם מלא: <span class="required">*</label>
     <input type="text" id="fullName" name="fullName">
 
-    <label for="email">כתובת אימייל:</label>
+    <label for="email">כתובת אימייל: <span class="required">*</span></label> 
+
     <input type="email" id="email" name="email">
 
-    <label for="spellType">סוג הלחש המבוקש:</label>
+    <label for="spellType">סוג הלחש המבוקש: <span class="required">*</label>
     <select id="spellType" name="spellType">
       <option value="">בחר סוג לחש</option>
       <option value="attack">התקפי</option>
@@ -30,7 +31,7 @@
     <label for="knowledgeLevel">רמת הידע הקיימת (1–10):</label>
     <input type="number" id="knowledgeLevel" name="knowledgeLevel" min="1" max="10">
 
-    <label>האם יש לך שרביט קסמים אישי?</label>
+    <label>האם יש לך שרביט קסמים אישי? <span class="required">*</label>
     <div class="radio-group">
       <label><input type="radio" name="hasWand" value="yes"> כן</label>
       <label><input type="radio" name="hasWand" value="no"> לא</label>
@@ -39,10 +40,10 @@
     <label for="attempts">מספר ניסיונות קודמים בלחש:</label>
     <input type="number" id="attempts" name="attempts" min="0">
 
-    <label for="guideSignature">חתימה דיגיטלית של מדריך:</label>
+    <label for="guideSignature">חתימה דיגיטלית של מדריך: <span class="required">*</label>
     <input type="text" id="guideSignature" name="guideSignature">
 
-    <label for="birthDate">יום לידה אסטרולוגי:</label>
+    <label for="birthDate">יום לידה אסטרולוגי: <span class="required">*</span></label>
     <input type="date" id="birthDate" name="birthDate">
 
     <div id="formMessages"></div>

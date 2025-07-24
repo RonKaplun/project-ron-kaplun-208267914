@@ -27,9 +27,6 @@ document.getElementById("spellRequestForm").addEventListener("submit", function(
     errors.push("יש לבחור סוג לחש.");
   }
 
-  if (isNaN(knowledgeLevel) || knowledgeLevel < 1 || knowledgeLevel > 10) {
-    errors.push("רמת הידע צריכה להיות בין 1 ל־10.");
-  }
 
   if (!hasWand) {
     errors.push("יש לבחור האם יש ברשותך שרביט.");
