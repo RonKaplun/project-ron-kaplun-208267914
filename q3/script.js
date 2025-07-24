@@ -66,7 +66,9 @@ document.getElementById("spellRequestForm").addEventListener("submit", function(
     hasWand: hasWand.value === "yes" ? "כן" : "לא",
     attempts: isNaN(attempts) ? 0 : attempts,
     guideSignature,
-    birthDate
+    birthDate,
+    status: "ממתינה"
+
   };
 
   saveItem(item);  
@@ -109,7 +111,14 @@ function renderItems(items) {
       <td>${item.attempts}</td>
       <td>${item.guideSignature}</td>
       <td>${item.birthDate}</td>
-      <td><button onclick="deleteItem(${index})">🗑️</button></td>
+       <td>
+    <select onchange="updateStatus(${index}, this.value)">
+      <option value="ממתינה" ${item.status === "ממתינה" ? "selected" : ""}>ממתינה</option>
+      <option value="מאושרת" ${item.status === "מאושרת" ? "selected" : ""}>מאושרת</option>
+      <option value="נדחתה" ${item.status === "נדחתה" ? "selected" : ""}>נדחתה</option>
+    </select>
+  </td>
+      <td><button onclick="deleteItem(${index})">מחק</button></td>
     `;
     tbody.appendChild(row);
   });
@@ -130,4 +139,9 @@ function filterByType(type) {
   renderItems(items);
 }
 
+function updateStatus(index, newStatus) {
+  let items = JSON.parse(localStorage.getItem("spellRequests")) || [];
+  items[index].status = newStatus;
+  localStorage.setItem("spellRequests", JSON.stringify(items));
+}
 document.addEventListener("DOMContentLoaded", loadItems);

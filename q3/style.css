@@ -216,4 +216,21 @@ gap: 10px;
 
 
 
+.go-to-container {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.go-to-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.go-to-link:hover {
+  background-color: navy;
+}
