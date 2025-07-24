@@ -4,6 +4,11 @@ body {
   background-color: whitesmoke;
   color: orangered;
   padding-right: 200px; 
+  min-height: 100%;
+}
+
+#top {
+  height: 140px;
 }
 
 .main-header {
@@ -56,7 +61,6 @@ body {
 
 
 .cards-container {
-  margin-top: 180px;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -113,10 +117,13 @@ body {
 
 .hover-magic {
   display: none;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
   background-color: lightblue ;
   padding: 10px;
   border-radius: 5px;
@@ -124,8 +131,12 @@ body {
   color: purple;
 }
 
+.event-card {
+  scroll-margin-top: 140px;
+}
+
 .event-card:hover .hover-magic {
-  display: block;
+ display: flex;
 }
 
 .jump-button {
@@ -139,8 +150,55 @@ body {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  z-index: 1001;
+
 }
 
 .jump-button:hover {
   background-color: yellow;
+}
+
+
+@media (max-width: 992px) {
+  .cards-container {
+    justify-content: space-around;
+  }
+  .event-card {
+    width: 45%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+ body {
+  padding-right: 0;
+}
+.side-menu {
+  display: none;
+}
+.main-header {
+  padding: 12px;
+}
+.cards-container {
+  margin-top: 140px;
+  flex-direction: column;
+  align-items: center;
+}
+.event-card {
+  width: 90%;
+}
+
+
+@media (max-width: 480px) {
+  .event-card {
+    width: 100%;
+    padding: 10px;
+  }
+  .event-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 }
