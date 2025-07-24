@@ -78,8 +78,9 @@ body {
 }
 
 .event-card img {
-  width: 100%;
-  max-height: 150px;
+  width: 200px;
+  height: 100px; 
+  max-height: 200px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -107,4 +108,39 @@ body {
 
 .tag-invite {
   background-color: red;
+}
+
+
+.hover-magic {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: lightblue ;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: purple;
+}
+
+.event-card:hover .hover-magic {
+  display: block;
+}
+
+.jump-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.jump-button:hover {
+  background-color: yellow;
 }
