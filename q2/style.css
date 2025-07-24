@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: whitesmoke;
-  color: gray;
+  color: orangered;
   padding-right: 200px; 
 }
 
@@ -19,13 +19,13 @@ body {
 
 .main-header h1 {
   margin: 0;
-  font-size: 25px;
+  font-size: 35px;
   color: blue;
 }
 
 .main-header .slogan {
   margin: 5px 0 0;
-  font-size: 15px;
+  font-size: 20px;
   color: purple;
 }
 
