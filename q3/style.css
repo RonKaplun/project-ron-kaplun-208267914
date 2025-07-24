@@ -102,3 +102,82 @@ button[type="submit"]:hover {
     font-size: 15px;
   }
 }
+
+
+
+
+
+.view-title {
+  text-align: center;
+  margin: 30px 0 10px;
+  font-size: 25px;
+  color: darkblue;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid lightgrey;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: lightskyblue;
+}
+
+#requestsTable {
+  width: 95%;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+#requestsTable th,
+#requestsTable td {
+  border: 1px solid lightgray;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#requestsTable th {
+  background-color: whitesmoke;
+  color: gray;
+}
+
+#requestsTable td button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#requestsTable td button:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .view-title {
+    font-size: 20px;
+  }
+
+  .filter-buttons button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  #requestsTable {
+    font-size: 10px;
+  }
+}

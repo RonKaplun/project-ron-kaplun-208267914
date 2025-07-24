@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>צפייה בבקשות לחש</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>רשימת בקשות לחש</h1>
+    <p class="slogan">כל הבקשות שהוגשו –  פילטרים </p>
+  </header>
+
+  <main class="container">
+    <section class="filter-section">
+      <h2>סינון לפי סוג לחש:</h2>
+      <button onclick="filterByType('all')">הצג הכל</button>
+      <button onclick="filterByType('התקפי')">התקפי</button>
+      <button onclick="filterByType('הגנתי')">הגנתי</button>
+      <button onclick="filterByType('חיזוק')">חיזוק</button>
+    </section>
+
+    <section>
+      <table id="requestsTable" class="request-table">
+        <thead>
+          <tr>
+            <th>שם מלא</th>
+            <th>אימייל</th>
+            <th>סוג לחש</th>
+            <th>רמת ידע</th>
+            <th>יש שרביט</th>
+            <th>מס' ניסיונות</th>
+            <th>חתימת מדריך</th>
+            <th>יום לידה</th>
+            <th>מחיקה</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
